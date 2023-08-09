@@ -219,3 +219,20 @@ $('#card-btn-2').click(function(){
 $('#card-btn-3').click(function(){
 	$(this).siblings().addClass('large-font')
 });
+
+
+
+
+let bookCharacter = {
+  name: "Reginald Jeeves",
+  employer: "Bertram Wilberforce Wooster",
+  novels: 11,
+  shortStories: 35,
+  printStatus: function () {
+      console.log(this.name + " works for " + this.employer);
+  },
+}
+
+console.log(bookCharacter.employer);
+console.log(bookCharacter["novels"]);
+console.log(bookCharacter.printStatus());
